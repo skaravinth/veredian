@@ -14,7 +14,7 @@ export const Topbarstyles={
         zIndex:1000,
         height:'121px',
         "@media (max-width:600px)":{
-      
+      height:'100px'
         } 
         
     },
@@ -39,7 +39,7 @@ export const Topbarstyles={
           marginLeft:'0' ,
           width:'60%',
           padding:'3%',
-          marginTop:'2%'
+         
           
         }
 
@@ -94,6 +94,7 @@ export const Topbarstyles={
       },
       listbutton:{
         marginRight:'3%',
+        marginBottom:'10px',
         color:'#000000',
         
       }
