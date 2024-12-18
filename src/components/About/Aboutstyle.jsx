@@ -31,10 +31,11 @@ export const Aboutstyles =(theme)=>({
          color:'#51585E',
          width:'115%',
          "@media (max-width:600px)":{
-          width:'150%',
+          width:'147%',
           display:'flex',
           justifyContent:'center',
           alignItems:'center',
+          lineSpacing:'20px'
          }
      },
      img:{
@@ -91,6 +92,7 @@ export const Aboutstyles =(theme)=>({
           display:'flex',
           justifyContent:'left',
           alignItems:'left',
+          marginLeft:'1%'
  
         }
       },
@@ -106,8 +108,8 @@ export const Aboutstyles =(theme)=>({
       "@media (max-width:600px)":{
             width:"100%",
           display:'flex',
-          justifyContent:'left',
-          alignItems:'left',
+       
+          marginLeft:'1%'
           
  
         }

@@ -23,12 +23,13 @@ export const styless=(theme)=>({
 
     },
     mail:{
-        width:'23%',
+        width:'25%',
        
-        height:'20px',
+        height:'25px',
         bgcolor:'#F9C300',
         color:'#091B29',
-        marginLeft:'8%',
+        
+        
         marginRight:'5%',
         display:'flex',
         justifyContent:'center',
@@ -36,23 +37,25 @@ export const styless=(theme)=>({
         fontSize:'12px',
         fontWeight:700,
         fontFamily:'DM Sans',
-        marginTop:'1%',
+       marginTop:'0.7%',
         
         "@media(max-width:600px)":{
-            width:'20%',
+            width:'25%',
+          
             height:'25px',
             fontFamily:'DM Sans',
-            marginBottom:'2%'
+            marginBottom:'2%',
+            marginTop:'1.2%',
             
         }
     },
     mailto:{
         display:'flex',
-        width: "24%",
+        width: "25.7%",
 height: "52px",
 bgcolor:'#0000004D',
 alignItems:"center",
-justifyContent:"space-between",
+justifyContent:"space-around",
 positions:'relative',
 
 "@media(max-width:600px)":{
@@ -100,10 +103,10 @@ meeting:{
     },arrow:{
        alignItems:'right',
         marginTop:'5px',
-     
+    
         
         "@media(max-width:600px)":{
-        
+      
         }
     }
     ,
@@ -141,14 +144,23 @@ display:'none'
     },
     twothings:{
         display:'flex',
-        width:'85%'
+        width:'85%',
+        marginLeft:'7%',
+        "@media(max-width:600px)":{
+        marginLeft:'5%',
+        
+        }
     },
     git:{
         fontFamily:'DM Sans',
         fontSize:'18px',
         color:'#ffffff',
-        letterSpacing:'1px',
-        marginTop:'3px'
+    
+        marginTop:'3px',
+        "@media(max-width:600px)":{
+            letterSpacing:'1px',
+            marginRight:'0%'
+        }
     }
     
 })

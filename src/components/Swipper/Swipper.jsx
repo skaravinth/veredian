@@ -17,9 +17,9 @@ import Person3 from "../../assets/Grahame_Jackson_24 1.svg"
 import { useTheme, useMediaQuery } from '@mui/material';
 
 const dotStyle =
-    "width: 10px; height: 10px; border-radius: 50%; background-color: #006838; display: inline-block;";
+    "width: 10px; height: 10px; border-radius: 50%; background-color: #006838;";
   const activeDotStyle =
-    "width: 30px; height: 10px; border-radius: 5px; background-color: #E6D617; display: inline-block;";
+    "width: 30px; height: 10px; border-radius: 5px; background-color: #E6D617;";
 const teamMembers = [
   {
     name: "Julian Jarvis",
@@ -75,7 +75,7 @@ export default function App() {
         variant="h4"
         fontWeight="bold"
         gutterBottom
-        sx={{ color: "#003b4a" }}
+        sx={{ color: "#003b4a",marginTop:isMobile ? "15%" : "6%",marginBottom: isMobile ? "5%":"3%",fontFamily: "IBM Plex Serif",fontSize: "32px",fontWeight:'700'}}
       >
         Our Team
       </Typography>

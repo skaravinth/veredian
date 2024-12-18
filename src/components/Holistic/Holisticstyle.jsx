@@ -60,9 +60,14 @@ export const styless =(theme)=>({
         fontSize:"32px",
         fontWeight:"700",
         color:"#091B29",
-        marginBottom:"10px",
+        
         textAlign:"center",
-        marginTop:"20%"
+        fontFamily:'IBM Plex Serif', 
+      marginTop:'7%',
+        "@media (max-width:600px)":{
+          marginTop:"15%",
+          marginBottom:"5%",
+        }
       },
       // layout:{
       // // width:'32%'
