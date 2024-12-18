@@ -38,6 +38,8 @@ export const Topbarstyles={
         "@media(max-width:600px)":{
           marginLeft:'0' ,
           width:'60%',
+          padding:'3%',
+          marginTop:'2%'
           
         }
 
@@ -50,7 +52,7 @@ export const Topbarstyles={
       },
       smallimg:{
         "@media(max-width:600px)":{
-          padding:'3% '
+          padding:'4% '
         }
       },
       tab: {

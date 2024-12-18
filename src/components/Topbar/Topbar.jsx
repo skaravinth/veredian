@@ -15,7 +15,7 @@ const Topbar = ({ scrollToSection, refs }) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
-
+  const isMobiles = window.innerWidth <= 600;
   const tabs = [
     { label: "Home", route: "/home", ref: refs.managementRef },
     { label: "About Us", route: "/aboutus", ref: refs.aboutRef },
@@ -90,7 +90,7 @@ const Topbar = ({ scrollToSection, refs }) => {
   return (
     <Grid container sx={Topbarstyles.topbar}>
       <Grid item sx={Topbarstyles.logo}>
-        <Logo />
+        <Logo style={{height:isMobiles?'64px':'100%',width:isMobiles?'64px':'100%'}}/>
       </Grid>
       {isMobile ? (
         <>
