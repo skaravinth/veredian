@@ -143,7 +143,7 @@ export default function App() {
           </Typography>
       
           </Box>
-         <Box sx={{width:'555px',fontSize:'16px',fontFamily:'DM Sans',color:'#717B85',fontWeight:'400',textAlign:'left',marginTop:'40px',marginLeft:'120px',"@media (max-width:600px)":{width:'100%',textAlign:'left',marginLeft:'0',marginT0p:'100px',position:'absolute',left:0,top:470,padding:'5%'}}}>
+         <Box sx={{width:'555px',fontSize:'16px',fontFamily:'DM Sans',color:'#717B85',fontWeight:'400',textAlign:'left',marginTop:'40px',marginLeft:'120px',"@media (max-width:600px)":{width:'100%',textAlign:'left',marginLeft:'0',marginTop:'-30px',position:'absolute',left:0,top:470,padding:'5%'}}}>
          <Typography variant="body2" style={{ transform: isMobile ? "skew(0deg)" : "skew(25deg)" ,width:isMobile?"93%":'100%' }}
          >{member.description}</Typography>
          </Box>
