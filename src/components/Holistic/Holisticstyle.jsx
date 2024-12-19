@@ -78,7 +78,7 @@ export const styless =(theme)=>({
       },
       pagination: {
         display: "flex",
-        justifyContent: "center",
+        marginLeft:'42%',
         marginTop: "20px",
         gap:'2px',
         marginBottom:'6%'

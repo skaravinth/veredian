@@ -161,6 +161,46 @@ display:'none'
             letterSpacing:'1px',
             marginRight:'0%'
         }
-    }
+    },
+    ContactAddress: {
+        display:"flex",
+        marginBottom:1,
+        boxSizing:"border-box",
+        backgroundColor:"#006547",
+      },
+      EmailTo: {
+        display:"flex",
+        paddingY:1,
+        paddingX:2,
+      },
+      ContactUsEndLine: {
+        fontSize:"14px",
+      },
+      ContactUsIcon: {
+        backgroundColor:"#005139",
+        display:"flex",
+        justifyContent:'center',
+        alignItems:"center",
+        paddingX:1,
+        color:'white'
+      },
+      ContactUsYellowBox: {
+        backgroundColor:"#f9c300",
+        fontSize:"12px",
+        display:"flex",
+        justifyContent:"center",
+        alignItems:"center",
+        paddingX:1,
+        color:"black",
+        fontWeight:"700",
+        letterSpacing:1,
+        fontFamily:'DM Sans'
+      },
+      ContactUsEmail: {
+        marginLeft:"10px",
+        fontSize:'16px',
+        color:'white',
+        fontFamily:'DM Sans'
+      },
     
 })

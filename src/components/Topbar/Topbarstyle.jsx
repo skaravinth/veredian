@@ -93,7 +93,7 @@ export const Topbarstyles={
         alignItems:'center'
       },
       listbutton:{
-        marginRight:'3%',
+        
         marginBottom:'10px',
         color:'#000000',
         

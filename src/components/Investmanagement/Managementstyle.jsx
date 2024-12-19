@@ -9,7 +9,7 @@ export const managements=(theme)=>({
         alignItems: 'center',
         justifyContent: 'center',
         border:'none',
-        marginLeft:'40px',
+        marginLeft:'35px',
         position:'relative',
        
         // marginRight:'40px',

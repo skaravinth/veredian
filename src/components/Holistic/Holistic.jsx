@@ -12,9 +12,9 @@ const Holistic = () => {
     const styles=styless(lighttheme)
 
     const dotStyle =
-    "width: 10px; height: 10px; border-radius: 50%; background-color: #006838; display: inline-block;";
+    "width: 10px; height: 10px; border-radius: 50%; background-color: #006838;";
   const activeDotStyle =
-    "width: 30px; height: 10px; border-radius: 5px; background-color: #E6D617; display: inline-block;";
+    "width: 25px; height: 10px; border-radius: 5px; background-color: #E6D617;";
     const cardData = [
         {
           title: "Investment focus and strategy",

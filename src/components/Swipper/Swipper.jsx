@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation,Pagination } from "swiper/modules";
 import "swiper/css";
@@ -16,10 +16,11 @@ import Person2 from "../../assets/Peter Montegriffo KC Photo 2021 A High Res 1 (
 import Person3 from "../../assets/Grahame_Jackson_24 1.svg"
 import { useTheme, useMediaQuery } from '@mui/material';
 
+
 const dotStyle =
     "width: 10px; height: 10px; border-radius: 50%; background-color: #006838;";
   const activeDotStyle =
-    "width: 30px; height: 10px; border-radius: 5px; background-color: #E6D617;";
+    "width: 25px; height: 10px; border-radius: 5px; background-color: #E6D617;";
 const teamMembers = [
   {
     name: "Julian Jarvis",
@@ -56,6 +57,11 @@ export default function App() {
   const isMobile = window.innerWidth <= 600;
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+  const [isPaginationReady, setPaginationReady] = useState(false);
+
+useEffect(() => {
+  setPaginationReady(true); // Ensure pagination element is available
+}, []);
   return (
     <Box
       sx={{
@@ -88,7 +94,7 @@ export default function App() {
   spaceBetween={110}
   navigation={!isMobile } 
   pagination={{
-    el: ".custom-pagination",
+    el: ".custom-paginations",
     clickable: true,
     renderBullet: (index, className) => {
       return `<span class="${className}" style="${
@@ -96,6 +102,8 @@ export default function App() {
       }"></span>`;
     },
   }} 
+ 
+
   style={{ padding: isMobile ? "0" : "0% 13.9%" }}
 >
   {teamMembers.map((member, index) => (
@@ -137,8 +145,8 @@ export default function App() {
 
         
         <Box textAlign="center" >
-        <Box sx={{width:'305px',height:'68px',bgcolor:'#009065',marginLeft:'20%',position:'absolute',bottom:20,zIndex:'-1',display:'flex',alignItems:'center',"@media(max-width:600px)":{transform: "skew(-50deg)",marginLeft:"30%",width:'110%',top:365,left:-200}}}>
-          <Typography variant="h6" fontWeight="bold" style={{transform: isMobile?"skew(50deg)":"skew(25deg)",textAlign:'left',marginLeft:isMobile?"40%":'30%',fontSize:'24px',color:'#fff',fontFamily:'DM Sans',fontWeight:'500',letterSpacing:'0.5px',marginTop:isMobile?"0px":'7px'}}>
+        <Box sx={{width:'305px',height:'68px',bgcolor:'#009065',marginLeft:'17%',position:'absolute',bottom:20,zIndex:'-1',display:'flex',alignItems:'center',transform: "skew(-45deg)","@media(max-width:600px)":{transform: "skew(-50deg)",marginLeft:"30%",width:'110%',top:365,left:-200}}}>
+          <Typography variant="h6" fontWeight="bold" style={{transform: isMobile?"skew(50deg)":"skew(55deg)",textAlign:'left',marginLeft:isMobile?"40%":'35%',fontSize:'24px',color:'#fff',fontFamily:'DM Sans',fontWeight:'500',letterSpacing:'0.5px',marginTop:isMobile?"0px":'7px'}}>
             {member.name}
           </Typography>
       
@@ -153,7 +161,17 @@ export default function App() {
     </SwiperSlide>
   ))}
 </Swiper>
- <Box className="custom-pagination"></Box>
+{isMobile && (
+  <Box
+    className="custom-paginations"
+    sx={{
+      marginBottom: '10%',
+      display: 'flex',
+      marginTop: '30px',
+
+    }}
+  ></Box>
+)}
 <Box>
   {/* {isSmallScreen ?<></>} */}
 </Box>

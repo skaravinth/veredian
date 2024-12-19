@@ -2,7 +2,7 @@ export const style={
     copyright:{
         width:'100%',
         bottom:0,
-        marginTop:'50px',
+   
         bgcolor:'#F5F7FA',
         display:'flex',
         justifyContent:'space-between',
