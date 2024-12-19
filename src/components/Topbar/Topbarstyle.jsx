@@ -14,7 +14,8 @@ export const Topbarstyles={
         zIndex:1000,
         height:'121px',
         "@media (max-width:600px)":{
-      height:'100px'
+      height:'100px',
+      width:'100%'
         } 
         
     },
